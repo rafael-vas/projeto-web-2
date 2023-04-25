@@ -5,17 +5,14 @@
   padding: 0;
 }
 
-/* Estilo do corpo da página */
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f7f7f7;
-  /* background-image: url("bg-edited.png"); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-/* Estilo do cabeçalho */
 h1 {
   font-size: 36px;
   margin: 30px auto;
@@ -37,11 +34,9 @@ h1::after {
   border-radius: 50px;
 }
 
-/* Estilo do formulário */
 form {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   max-width: 700px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -97,7 +92,6 @@ form input[type="text"]:focus {
   border-color: #f44336;
 }
 
-/* Estilo da lista de receitas */
 #recipe-list {
   max-width: 700px;
   list-style: none;
