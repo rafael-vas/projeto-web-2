@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sugestões de Receitas de Culinária</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Receitas de Culinária</h1>
+    </header>
+    <form class="form">
+        <label for="title">Nome da Receita:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="type">Tipo:</label>
+        <select id="type" name="type" required>
+            <option value="" hidden></option>
+            <option value="Entrada">Entrada</option>
+            <option value="Prato Principal">Prato Principal</option>
+            <option value="Sobremesa">Sobremesa</option>
+        </select>
+        <label for="difficulty">Dificuldade:</label>
+        <select id="difficulty" name="difficulty" required>
+            <option value="" hidden></option>
+            <option value="Fácil">Fácil</option>
+            <option value="Médio">Médio</option>
+            <option value="Difícil">Difícil</option>
+        </select>
+        <button type="submit">Adicionar</button>
+    </form>
+    <ul id="recipe-list">
+    </ul>
+</body>
+
+</html>

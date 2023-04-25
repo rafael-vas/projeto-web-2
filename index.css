@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo do corpo da página */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f7f7;
+  /* background-image: url("bg-edited.png"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Estilo do cabeçalho */
+h1 {
+  font-size: 36px;
+  margin: 30px auto;
+  margin-bottom: 50px;
+  color: #333;
+  position: relative;
+  width: fit-content;
+
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #f44336;
+  left: 0;
+  bottom: 2px;
+  border-radius: 50px;
+}
+
+/* Estilo do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+form label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+form select {
+  font-size: 16px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: inherit;
+}
+
+form select option {
+  font-family: inherit;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: inherit;
+}
+
+form button:hover {
+  background-color: #ff6659;
+}
+
+form input {
+  font-family: inherit;
+}
+
+form input[type="text"] {
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form input[type="text"]:focus {
+  outline: none;
+  border-color: #f44336;
+}
+
+/* Estilo da lista de receitas */
+#recipe-list {
+  max-width: 700px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#recipe-list li {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#recipe-list li .recipe-info {
+  font-size: 18px;
+  color: #333;
+}
+
+#recipe-list li .buttons button {
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #f44336;
+  transition: color 0.3s ease;
+}
+
+#recipe-list li .buttons button:hover {
+  color: #ff6659;
+}
+
+#recipe-list li .buttons button + button {
+  margin-left: 10px;
+}
+
